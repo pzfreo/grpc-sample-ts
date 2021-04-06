@@ -4,6 +4,7 @@
   "main": "src/app.ts",
   "license": "Apache-2.0",
   "scripts": {
+    "generate": "./scripts/build-protos.sh ./proto/purchase.proto",
     "start": "ts-node src/app.ts",
     "dev": "nodemon --watch . --ext ts --exec \"ts-node src/app.ts\"",
     "build": "tsc"
