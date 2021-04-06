@@ -24,6 +24,6 @@ message Date {
 }
 
 message PurchaseReply {
-  string message = 1;
+  string uuid = 1;
   int32 returncode = 2;
 }

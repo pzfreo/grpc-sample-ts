@@ -11,7 +11,7 @@ const purchase_grpc_pb_1 = require("./proto/purchase_grpc_pb");
 const PurchaseServer_1 = require("./PurchaseServer");
 const grpc = __importStar(require("@grpc/grpc-js"));
 const server = new grpc.Server();
-const port = process.env.PORT || 8001;
+const port = process.env.PORT || 50051;
 server.addService(purchase_grpc_pb_1.PurchaseService, new PurchaseServer_1.PurchaseServer());
 server.bindAsync(`localhost:${port}`, grpc.ServerCredentials.createInsecure(), (err, port) => {
     if (err) {
