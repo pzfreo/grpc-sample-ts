@@ -19,7 +19,7 @@ pids
 lib-cov
 
 # proto generated code
-src/protos
+src/proto/*
 
 # Coverage directory used by tools like istanbul
 coverage
