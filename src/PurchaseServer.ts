@@ -13,8 +13,9 @@ export class PurchaseServer implements IPurchaseServer {
         // here is where we would save the data!
         console.log(call.request.toObject());
         
+        reply.setReturncode(1);
         reply.setUuid(uuidv4());
-        reply.setReturncode(0);
+        
         callback(null, reply);
     };
         
